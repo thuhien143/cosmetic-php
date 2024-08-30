@@ -1,0 +1,188 @@
+
+/* Thiết lập CSS cho banner */
+.banner {
+    background-color: rgb(30, 30, 31);
+    color: #fff;
+    padding: 0;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    top: 0;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+/* Thiết lập CSS cho top menu */
+.top-menu {
+    background-color: #444;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    top: 0px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.top-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu li {
+    margin-right: 20px;
+}
+
+.top-menu li:last-child {
+    margin-right: 0;
+}
+
+.top-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Thiết lập CSS cho left menu */
+.left-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+
+.logo img {
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    display: none;
+    z-index: 1;
+}
+
+.sub-menu li {
+    margin: 0;
+}
+
+.menu-item:focus .sub-menu,
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    padding: 15px 20px;
+}
+
+.menu a:hover,
+.menu a:focus {
+    background-color: #fff;
+}
+/* Thiết lập CSS cho phần chính của trang */
+.content {
+    margin-left: 250px;;
+    padding: 20px;
+    min-height: calc(100vh - 180px);
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+  .products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .products .product {
+    width: calc(25% - 15px);
+    margin-bottom: 30px;
+  }
+  
+  .products .product img {
+    width: 100%;
+  }
+  
+  .products .product .product-info {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .products .product .product-info h3 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .products .product .product-info p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+/* Thiết lập CSS cho footer */
+.footer {
+    background-color: #999;
+    color: #fff;
+    height: 75px;
+    line-height: 50px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+/* Thiết lập CSS cho body */
+.body {
+    margin: 0;
+    padding-bottom: 50px;
+    position: relative;
+}
